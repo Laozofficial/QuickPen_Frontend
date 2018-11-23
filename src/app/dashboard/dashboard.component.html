@@ -16,11 +16,11 @@
 
                 <div>
                   <div class="username uk-text-bold">
-                    <i class="fa fa-user"></i> {{ app.username }}
+                    <i class="fa fa-power-off" [ngStyle]="{color: powerColor()}" (click)="changeStatus()"></i>
                   </div>
                 </div>
                 <div>
-                  <div class="uk-text-bold">
+                  <div class="uk-text-bold runtime text-light">
                     <i class="fa fa-hourglass"></i> {{ app.runtime }}
                   </div>
                 </div>
@@ -45,7 +45,8 @@
 
                 <div>
                   <div class="username uk-text-bold">
-                    <i class="fa fa-share" data-toggle="tooltip" data-placement="top" title="Share Settings"></i>
+                    <i class="fa fa-user" data-toggle="tooltip" data-placement="top" title="users"></i> {{ app.username
+                    }}
                   </div>
                 </div>
                 <div>

@@ -31,7 +31,7 @@
 
 .fa-power-off {
   color: #dc3545;
-  padding-top: 1em;
+  /* padding-top: 1em; */
 }
 
 .newapp {
@@ -41,6 +41,19 @@
   border: 6px solid #00c853;
   border-radius: 1.25rem;
   font-weight: bolder;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+p {
+  color: white;
 }
 
 .newapp:hover {
@@ -54,6 +67,7 @@
 
 .uk-card {
   border-radius: 0.25rem;
+  background-color: #343a40;
 }
 
 .fa-trash {
@@ -72,7 +86,7 @@
 
 .fa-hourglass {
   font-size: 0.9em;
-  color: #343a40;
+  color: white;
 }
 
 hr {
@@ -83,6 +97,10 @@ hr {
 .footer {
   padding-bottom: 0px;
   margin-bottom: 0px;
+}
+
+.runtime{
+  color: white
 }
 
 .footee {
@@ -97,11 +115,7 @@ hr {
   background-size: cover;
   /* height: 100vh; */
   background-attachment: fixed;
-  font-family: 'Segoe UI',
-    Tahoma,
-    Geneva,
-    Verdana,
-    sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #343a40;
   background-blend-mode: soft-light;
 }
