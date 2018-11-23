@@ -1,0 +1,107 @@
+.fa {
+  color: #00c853;
+  font-size: 2em;
+}
+
+.hoverable {
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(240, 232, 232, 0.2), 0 6px 20px 0 rgba(247, 239, 239, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(245, 242, 242, 0.2), 0 6px 20px 0 rgba(252, 249, 249, 0.19);
+  /* padding-bottom: 0px;
+  margin-bottom: 0px; */
+}
+
+.fa-share {
+  font-size: 0.9em;
+}
+
+.fa-edit {
+  font-size: 0.9em;
+}
+
+.nopad {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.fa-power-off {
+  color: #dc3545;
+  padding-top: 1em;
+}
+
+.newapp {
+  background-color: transparent;
+  color: #00c853;
+  padding: 1.5rem;
+  border: 6px solid #00c853;
+  border-radius: 1.25rem;
+  font-weight: bolder;
+}
+
+.newapp:hover {
+  background-color: #00c853;
+  color: white;
+  padding: 1.5rem;
+  border: 6px solid #00c853;
+  border-radius: 1.25rem;
+  font-weight: bolder;
+}
+
+.uk-card {
+  border-radius: 0.25rem;
+}
+
+.fa-trash {
+  color: #dc3545;
+  font-size: 0.9em;
+}
+
+.username {
+  font-size: 0.9em;
+  padding-bottom: 1em;
+}
+
+.fa-user {
+  font-size: 0.9em;
+}
+
+.fa-hourglass {
+  font-size: 0.9em;
+  color: #343a40;
+}
+
+hr {
+  /* border-color: #343a40; */
+  /* border: 6px solid #343a40; */
+}
+
+.footer {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.footee {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.body {
+  background: url('../../assets/img/luca-bravo-149740.395.jpg') no-repeat center fixed;
+  background-size: cover;
+  /* height: 100vh; */
+  background-attachment: fixed;
+  font-family: 'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+  background-color: #343a40;
+  background-blend-mode: soft-light;
+}

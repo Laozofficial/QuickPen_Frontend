@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg animated slideInDown delay-1s hoverable sticky-top">
+  <a class="navbar-brand" href="#">QuickPen</a>
+  <div class="pos-f-t uk-hidden@m">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <!-- <h5 class="text-white h4">Collapsed content</h5>
+        <span class="text-muted">Toggleable via the navbar brand.</span> -->
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="collapse navbar-collapse animated slideInUp delay-1s" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a class="nav-link" routerLink="/dashboard"><i class="fa fa-dashboard"></i> Dashboard</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/profile"><i class="fa fa-user"></i> Profile</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/services">
+          <i class="fa fa-cog"></i> Services</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/terms"><i class="fa fa-terminal"></i> Terms & Condition</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/about">
+          <i class="fa fa-users"></i> About</a>
+      </li>
+    </ul>
+
+    <!-- <nav class="navbar uk-hidden@m" uk-hidden>
+      <form class="form-inline">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Search</span>
+          </div>
+        </div>
+      </form>
+    </nav> -->
+  </div>
+</nav>

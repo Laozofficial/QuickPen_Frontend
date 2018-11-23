@@ -1,0 +1,78 @@
+<app-header></app-header>
+<div class="body">
+  <br />
+  <div class="container">
+    <div class="">
+      <h4 class="uk-text-bold uk-text-uppercase uk-text-center text-light ">
+        Your Connected App
+      </h4>
+    </div>
+    <div>
+      <div class="uk-child-width-1-3@m uk-text-center " uk-grid>
+        <div *ngFor="let app of apps">
+          <div class="uk-text-center uk-card uk-card-default uk-card-body hoverable">
+            <div class="footer">
+              <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+
+                <div>
+                  <div class="username uk-text-bold">
+                    <i class="fa fa-user"></i> {{ app.username }}
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-text-bold">
+                    <i class="fa fa-hourglass"></i> {{ app.runtime }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <!-- if this -->
+            <h5 class="uk-text-bold uk-text-uppercase">
+              <img src="{{ app.thisimage }}" width="40" height="40" />
+              {{ app.this }}
+            </h5>
+            <!-- arrow down -->
+            <i class="fa fa-arrow-down animated pulse infinite"></i>
+            <!-- then that -->
+            <h5 class="uk-text-bold uk-text-uppercase nopad">
+              <img src="{{ app.thenimage }}" width="40" height="40" />
+              {{ app.then }}
+            </h5>
+            <hr />
+            <div class="footee">
+              <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+
+                <div>
+                  <div class="username uk-text-bold">
+                    <i class="fa fa-share" data-toggle="tooltip" data-placement="top" title="Share Settings"></i>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-text-bold">
+                    <i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Edit App Settings"></i>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-text-bold">
+                    <i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="Delete This App"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container uk-align-center">
+    <button class="btn newapp uk-align-center" data-toggle="tooltip" data-placement="top" title="Create new App">CREATE
+      NEW
+      APPLICATION</button>
+  </div>
+
+
+
+</div>

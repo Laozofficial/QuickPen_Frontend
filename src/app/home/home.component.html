@@ -1,0 +1,88 @@
+<nav class="navbar  newnav sticky-top">
+  <a class="navbar-brand" href="#">
+    <img src="../../assets/img/quickpen2.png" width="170" height="130" class="d-inline-block align-top animated slideInLeft delay-1s" alt="QuickPen Logo">
+  </a>
+  <a class="navbar-brand uk-align-right uk-text-bold" (click)="showform()" >
+    <span class="signin text-light">{{ signingin }}</span>
+  </a>
+</nav>
+
+<div class="home">
+  <div class="container">
+    <div class="uk-align-center">
+
+    </div>
+    <!-- <h1 class="display-4 uk-text-bold uk-text-center animated slideInLeft delay-2s uk-text-uppercase">A world that works for you</h1> -->
+    <!-- sign in card-->
+    <div [hidden]="login" class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin hoverable" uk-grid>
+      <div class="uk-card-media-left uk-visible@m uk-cover-container">
+        <img src="../../assets/img/quickpen.png" alt=""   width="200" height="200" uk-cover class="animated bounce delay-1s">
+        <canvas width="600" height="400"></canvas>
+      </div>
+      <div>
+        <div class="uk-card-body hoverable">
+          <!-- <h3 class="uk-card-title uk-text-uppercase uk-text-center uk-text-bold">Login</h3> -->
+          <form >
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="uk-text-uppercase uk-text-bold text-primary"><i class="fa fa-envelope"></i>
+                Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" (ngModel)="email">
+              <small [hidden]="error" class="form-text text-muted text-danger">there's a problem with your credentials...please check again.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword" class="uk-text-uppercase uk-text-bold text-primary"><i class="fa fa-unlock-alt"></i>
+                Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password" (ngModel)="password">
+            </div>
+            <button class="btn btn-primary btn-block uk-text-bold" routerLink="/dashboard">SIGN IN</button>
+            <h6 class="text-light uk-text-primary uk-text-right">No Account ?<span class="uk-text-bold text-primary"
+                (click)="signup()">
+                Create Account</span></h6>
+          </form>
+          <h5 class="uk-text-muted uk-text-bold uk-text-center">OR</h5>
+          <button class="btn btn-primary btn-block"><i class="fa fa-facebook"></i> continue with facebook</button>
+          <button class="btn btn-block" style="background-color:#03a9f4"><i class="fa fa-twitter"></i> continue with
+            twitter</button>
+          <button class="btn btn-danger btn-block"><i class="fa fa-google-plus"></i> continue with google</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Registration-->
+    <div [hidden]="register" class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin hoverable" uk-grid>
+      <div class="uk-flex-last@s  uk-visible@m uk-card-media-right uk-cover-container">
+        <img src="../../assets/img/quickpen.png" alt="" uk-cover class="animated bounce delay-1s">
+        <canvas width="600" height="400"></canvas>
+      </div>
+      <div>
+        <div class="uk-card-body hoverable">
+          <!-- <h3 class="uk-card-title uk-text-bold uk-text-uppercase uk-text-center">Sign up</h3> -->
+          <form>
+            <div class="form-group">
+              <label for="InputEmail1" class="uk-text-uppercase uk-text-bold text-primary"><i class="fa fa-envelope"></i>
+                Email</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email">
+              <small id="emailHelp" class="form-text text-muted text-success">We'll never share your email with anyone
+                else.</small>
+            </div>
+            <div class="form-group">
+              <label for="InputPassword2" class="uk-text-uppercase uk-text-bold text-primary"><i class="fa fa-unlock-alt"></i>
+                Password</label>
+              <input type="password" class="form-control" id="InputPassword2" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="InputPassword1" class="uk-text-uppercase uk-text-bold text-primary"><i class="fa fa-unlock-alt"></i>
+                Confirm Password</label>
+              <input type="password" class="form-control" id="InputPassword1" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block uk-text-bold">SIGN UP</button>
+            <h6 class="text-light uk-text-primary uk-text-right">Already have an Account ?<span class="uk-text-bold text-primary"
+                (click)="signin()">
+                sign In</span></h6>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
