@@ -1,3 +1,39 @@
-<p>
-  register works!
-</p>
+<div class="home">
+  <div class="container">
+    <div class="d-flex p-2 bd-highlight">
+      <div class="d-flex justify-content-center  uk-align-center uk-flex uk-flex-middle">
+        <div class="card" style="width: 28rem;">
+          <div class="card-body">
+            <!-- <h5 class="card-title uk-text-center uk-text-uppercase uk-text-bold">Login</h5>
+            <button class="btn btn-block twitter-icon"><i class="fa fa-twitter text-light"></i></button>
+            <button class="btn btn-block google-icon "><i class="fa fa-google-plus text-light"></i></button>
+            <small class="uk-text-bold float-right uk-text-capitalize"> or <span><a [routerLink]="['/login']">Login
+                  with Email</a></span>
+            </small>
+            <h4 class="text-dark uk-text-uppercase uk-text-center uk-text-bold">OR</h4> -->
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1"><i class="fa fa-envelope icons"></i> Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small class="form-text text-success">{{ formtext }}</small>
+                <small class="form-text text-danger">{{ formerror }}</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1"><i class="fa fa-lock icons"></i> Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword2"><i class="fa fa-lock icons"></i> Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password">
+              </div>
+              <button type="submit" class="btn btn-block btn-primary">Submit</button>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

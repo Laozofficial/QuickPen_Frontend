@@ -1,0 +1,52 @@
+.home {
+  background: url('../../assets/img/bg.jpg') no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  font-family: 'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif !important;
+  background-color: #343a40 !important;
+  background-blend-mode: soft-light !important;
+  min-height: 100vh !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  /* margin-bottom: 0% !important; */
+  /* padding-bottom: 2% !important; */
+  /* position: fixed;
+top: 0;
+left: 0;
+*/
+  /* overflow-x: hidden */
+}
+
+/* .uk-navbar-item,
+.uk-search-input {
+  width: 100%;
+} */
+
+.hoverable {
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-sm {
+  background-color: #00c853;
+  border-color: #00c853;
+}
+
+.btn-sm:hover {
+  background-color: transparent;
+  border-color: #00c853;
+  color: #00c853
+}
+
+input.uk-search-input {
+  width: 100%;
+}

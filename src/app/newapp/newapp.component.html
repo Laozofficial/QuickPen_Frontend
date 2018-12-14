@@ -1,0 +1,44 @@
+<div class="home">
+  <app-header></app-header>
+
+  <nav class="uk-navbar-container" uk-navbar>
+    <div class="container">
+      <div class="uk-navbar-left">
+
+        <div class="uk-navbar-item">
+          <form class="uk-search uk-search-navbar">
+            <span uk-search-icon></span>
+            <input class="uk-search-input" type="search" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  <div class="uk-child-width-1-2@s uk-child-width-1-5@m uk-text-center" uk-grid>
+    <div *ngFor="let api of myapis">
+      <div>
+        <img src="{{ api.icon }}" class="icons " width="100" height="100"><br>
+        <span class="text-light uk-text-bold uk-text-uppercase">{{ api.name }}</span>
+        <br>
+        <!-- <button class="btn hoverable btn-sm btn-primary text-light uk-text-bold uk-text-uppercase">CONNECT
+          to {{ api.name }}</button> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container" [hidden]="that">
+    <div class="uk-child-width-1-2@s uk-child-width-1-5@m uk-text-center" uk-grid>
+      <div *ngFor="let api of apis">
+        <div>
+          <img src="{{ api.icon }}" class="icons " width="100" height="100"><br>
+          <span class="text-light uk-text-bold uk-text-uppercase">{{ api.name }}</span>
+          <br>
+           <button class="btn hoverable btn-sm btn-primary text-light uk-text-bold uk-text-uppercase">CONNECT
+          to {{ api.name }}</button>
+</div>
+</div>
+</div>
+</div> -->
+</div>

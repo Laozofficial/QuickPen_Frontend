@@ -1,31 +1,30 @@
-import { Component, OnInit } from "@angular/core";
-import { Router, Routes } from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+// import { DashboardComponent } from "./dashboard/dashboard";
 
 @Component({
-  selector: "app-home",
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.css"]
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
   register = true;
   error = true;
-  login = true;
+  login = false;
   signingin = 'Sign in';
-  email = '';
-  password = '';
+  email;
+  spinner = true;
+  loginbutton = false;
+  password;
   constructor(
-              // public route: ActivatedRoute,
-              public router: Router
-              ) {}
+    // public route: ActivatedRoute,
+    public router: Router // public dashboard: DashboardComponent
+  ) {}
 
   ngOnInit() {}
 
-  showform(){
+  showform() {
     this.signingin = 'Laoding....';
-    setTimeout(() => {
-      this.login = false;
-      this.signingin = 'Sign In';
-    });
   }
 
   signup() {
@@ -38,11 +37,25 @@ export class HomeComponent implements OnInit {
     this.register = true;
   }
 
-  loginuser(){
-    if(this.email == 'ellison@gmail.com', this.password == '123456'){
-      this.router.navigate(["dashboard"]);
-    }else{
-      this.error = false;
+  loginuser() {
+    if (this.password = '123456') {
+      this.signingin = 'signing in';
+      this.loginbutton = true;
+      this.spinner = false;
+      setTimeout(() => {
+        this.router.navigate(['dashboard']);
+      }, 4000);
+    }
+    if (this.password !== '123456'){
+      this.signingin = 'signing in';
+      this.loginbutton = true;
+      this.spinner = false;
+      setTimeout(() => {
+        this.error = false;
+      }, 4000);
+      this.signingin = 'sign in';
+      this.loginbutton = false;
+      this.spinner = true;
     }
   }
 }

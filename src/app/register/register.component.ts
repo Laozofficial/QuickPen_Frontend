@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  selector: "app-register",
+  templateUrl: "./register.component.html",
+  styleUrls: ["./register.component.css"]
 })
 export class RegisterComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  formtext = "We will never share your email with anyone else.";
+  formerror;
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

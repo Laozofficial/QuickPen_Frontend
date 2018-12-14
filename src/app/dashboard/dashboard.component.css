@@ -20,6 +20,7 @@
 
 .fa-edit {
   font-size: 0.9em;
+  padding-left: 1.5em
 }
 
 .nopad {
@@ -68,11 +69,13 @@ p {
 .uk-card {
   border-radius: 0.25rem;
   background-color: #343a40;
+  opacity: 0.9;
 }
 
 .fa-trash {
   color: #dc3545;
   font-size: 0.9em;
+  /* padding-left: 1em;s */
 }
 
 .username {
@@ -82,6 +85,7 @@ p {
 
 .fa-user {
   font-size: 0.9em;
+  padding-right: 1.5em
 }
 
 .fa-hourglass {
@@ -99,7 +103,7 @@ hr {
   margin-bottom: 0px;
 }
 
-.runtime{
+.runtime {
   color: white
 }
 
@@ -110,12 +114,126 @@ hr {
   margin-top: 0px;
 }
 
-.body {
-  background: url('../../assets/img/luca-bravo-149740.395.jpg') no-repeat center fixed;
+.create {
+  padding-top: 30%;
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li {
+  line-height: 2em;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+/* .body {
+  background: url('../../assets/img/bg1\ \(5\).jpg') no-repeat center fixed;
   background-size: cover;
-  /* height: 100vh; */
+  height: 100vh;
   background-attachment: fixed;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #343a40;
   background-blend-mode: soft-light;
+} */
+
+
+.home {
+  background: url('../../assets/img/agreement-black-business-943630.jpg') no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  font-family: 'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif !important;
+  background-color: #343a40 !important;
+  background-blend-mode: soft-light !important;
+  min-height: 100vh !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  /* margin-bottom: 0% !important; */
+  /* padding-bottom: 2% !important; */
+  /* position: fixed;
+top: 0;
+left: 0;
+*/
+}
+
+.line {
+  border-bottom: 6px solid #00c853;
+  /* padding-bottom: 1em; */
+  margin-bottom: 1em;
+}
+
+.icon {
+  background-color: transparent;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  /* cursor: zoom-in */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #343a40;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #00c853;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #00c853;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
